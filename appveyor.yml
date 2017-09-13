@@ -1,0 +1,22 @@
+# branches to build
+branches:
+  # whitelist
+  only:
+    - development
+    
+image: Visual Studio 2013
+
+
+# fetch repository as zip archive
+shallow_clone: true                 # default is "false"
+
+# set clone depth
+clone_depth: 5                      # clone entire repository history if not defined
+
+# scripts that run after cloning repository
+install:
+  - cmd: install.bat
+  - cmd: setenv.bat
+  
+build_script:
+  - cmd: build.bat
