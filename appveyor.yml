@@ -18,7 +18,6 @@ clone_depth: 5                      # clone entire repository history if not def
 
 # scripts that run after cloning repository
 install:
-  - cmd: install.bat
   - cmd: setenv.bat
   
 build_script:
