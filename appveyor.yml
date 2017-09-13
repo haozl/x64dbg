@@ -22,4 +22,4 @@ install:
   - cmd: setenv.bat
   
 build_script:
-  - cmd: build.bat
+  - cmd: build.bat x32
